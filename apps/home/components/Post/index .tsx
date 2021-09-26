@@ -12,7 +12,7 @@ export function Post() {
 
   return (
     <div className={style.div}>
-      Post {id} :
+      Post {id}:{' '}
       <Link href="/post">
         <a>{data?.title}</a>
       </Link>
