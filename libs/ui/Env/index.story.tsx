@@ -2,7 +2,7 @@ import { Env } from '.'
 import type { Meta } from '@storybook/react'
 
 // export const Default = (): JSX.Element => <Env />
-export const Default = (): JSX.Element => <div nad={df}>abc</div>
+export const Default = (): JSX.Element => <div>abc</div>
 
 const meta: Meta = {
   component: Env,
