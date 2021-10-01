@@ -5,6 +5,6 @@ import Ui from './index';
 describe('Ui', () => {
   it('should render successfully', () => {
     const { baseElement } = render(<Ui />);
-    expect(baseElement).toBeTruthy();
+    expect(baseElement).toBeTruth();
   });
 });
