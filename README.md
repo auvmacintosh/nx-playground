@@ -4,5 +4,5 @@
 ```bash
 pnpx nx build home --prod
 dist/apps/home/.next
-npm i pnpm -g && pnpm i
+npm i pnpm -g && pnpm i --frozen-lockfile
 ```
