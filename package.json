@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "nx serve home",
-    "build": "nx build home",
     "analyze": "ANALYZE=true nx build home",
-    "test": "nx test home",
-    "sb:ui": "nx storybook ui"
+    "build": "nx build home",
+    "dev": "nx serve home --port 3000",
+    "sb:ui": "nx storybook ui --port 6000",
+    "test": "nx test home"
   },
   "private": true,
   "dependencies": {
@@ -15,6 +15,7 @@
     "core-js": "^3.6.5",
     "next": "11.1.0",
     "react": "17.0.2",
+    "react-content-loader": "^6.0.3",
     "react-dom": "17.0.2",
     "react-query": "^3.24.4",
     "regenerator-runtime": "0.13.7",

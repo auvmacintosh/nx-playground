@@ -3,6 +3,7 @@ dependencies:
   core-js: 3.18.0
   next: 11.1.0_c8387e56bc3b6d5950464ec7c874e6c5
   react: 17.0.2
+  react-content-loader: 6.0.3_react@17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-query: 3.24.4_react-dom@17.0.2+react@17.0.2
   regenerator-runtime: 0.13.7
@@ -3216,7 +3217,7 @@ packages:
     dependencies:
       '@cypress/webpack-preprocessor': 4.1.5_webpack@4.46.0
       '@nrwl/devkit': 12.9.0
-      '@nrwl/linter': 12.9.0_ts-node@9.1.1
+      '@nrwl/linter': 12.9.0
       '@nrwl/workspace': 12.9.0_prettier@2.4.1+ts-node@9.1.1
       chalk: 4.1.0
       cypress: 8.4.1
@@ -3262,7 +3263,7 @@ packages:
     dependencies:
       '@cypress/webpack-preprocessor': 4.1.5
       '@nrwl/devkit': 12.9.0
-      '@nrwl/linter': 12.9.0_ts-node@9.1.1
+      '@nrwl/linter': 12.9.0
       '@nrwl/workspace': 12.9.0_prettier@2.4.1+ts-node@9.1.1
       chalk: 4.1.0
       cypress: 8.4.1
@@ -3322,7 +3323,6 @@ packages:
       jest-util: 27.0.6
       rxjs: 6.6.7
       tslib: 2.3.1
-    dev: true
     resolution:
       integrity: sha512-PHPG6DlwNgrT4+uplJqM814k+gqNV/m85FIes6JkzRO8XMK9jmqF0hwJvyymCZHDmGXMqwa0muoxkjoJs2CI/A==
   /@nrwl/jest/12.9.0_ts-node@9.1.1:
@@ -3349,19 +3349,6 @@ packages:
       minimatch: 3.0.4
       tmp: 0.2.1
       tslib: 2.3.1
-    dev: true
-    resolution:
-      integrity: sha512-8acZTT0nkwi914uJ6fMhZT6fZMMKOUGGjEWhvw9D3Lhe0aACsnXXSB+hJh+E8qchcGMYliqXuSi3X4Liq/fUFw==
-  /@nrwl/linter/12.9.0_ts-node@9.1.1:
-    dependencies:
-      '@nrwl/devkit': 12.9.0
-      '@nrwl/jest': 12.9.0_ts-node@9.1.1
-      glob: 7.1.4
-      minimatch: 3.0.4
-      tmp: 0.2.1
-      tslib: 2.3.1
-    peerDependencies:
-      ts-node: '*'
     resolution:
       integrity: sha512-8acZTT0nkwi914uJ6fMhZT6fZMMKOUGGjEWhvw9D3Lhe0aACsnXXSB+hJh+E8qchcGMYliqXuSi3X4Liq/fUFw==
   /@nrwl/next/12.9.0_e6fc9860a33224094fc73479a08ee264:
@@ -3370,7 +3357,7 @@ packages:
       '@nrwl/cypress': 12.9.0_f87e34fb032552af90007a0e1294d6b2
       '@nrwl/devkit': 12.9.0
       '@nrwl/jest': 12.9.0_ts-node@9.1.1
-      '@nrwl/linter': 12.9.0_ts-node@9.1.1
+      '@nrwl/linter': 12.9.0
       '@nrwl/react': 12.9.0_b5af4e3e8a9986c8371af82d31d7ea3c
       '@nrwl/web': 12.9.0_f87e34fb032552af90007a0e1294d6b2
       '@nrwl/workspace': 12.9.0_prettier@2.4.1+ts-node@9.1.1
@@ -3431,7 +3418,7 @@ packages:
       '@nrwl/cypress': 12.9.0_ab04d1b3052a9ae5f59ca7b854f39bdd
       '@nrwl/devkit': 12.9.0
       '@nrwl/jest': 12.9.0_ts-node@9.1.1
-      '@nrwl/linter': 12.9.0_ts-node@9.1.1
+      '@nrwl/linter': 12.9.0
       '@nrwl/storybook': 12.9.0_ab04d1b3052a9ae5f59ca7b854f39bdd
       '@nrwl/web': 12.9.0_f87e34fb032552af90007a0e1294d6b2
       '@nrwl/workspace': 12.9.0_prettier@2.4.1+ts-node@9.1.1
@@ -3479,7 +3466,7 @@ packages:
     dependencies:
       '@nrwl/cypress': 12.9.0_ab04d1b3052a9ae5f59ca7b854f39bdd
       '@nrwl/devkit': 12.9.0
-      '@nrwl/linter': 12.9.0_ts-node@9.1.1
+      '@nrwl/linter': 12.9.0
       '@nrwl/workspace': 12.9.0_prettier@2.4.1+ts-node@9.1.1
       core-js: 3.18.0
       semver: 7.3.4
@@ -3628,7 +3615,7 @@ packages:
       '@nrwl/cypress': 12.9.0_ab04d1b3052a9ae5f59ca7b854f39bdd
       '@nrwl/devkit': 12.9.0
       '@nrwl/jest': 12.9.0_ts-node@9.1.1
-      '@nrwl/linter': 12.9.0_ts-node@9.1.1
+      '@nrwl/linter': 12.9.0
       '@nrwl/workspace': 12.9.0_prettier@2.4.1+ts-node@9.1.1
       '@rollup/plugin-babel': 5.3.0_@babel+core@7.15.5+rollup@2.57.0
       '@rollup/plugin-commonjs': 20.0.0_rollup@2.57.0
@@ -3739,7 +3726,7 @@ packages:
       '@nrwl/cli': 12.9.0
       '@nrwl/devkit': 12.9.0
       '@nrwl/jest': 12.9.0_ts-node@9.1.1
-      '@nrwl/linter': 12.9.0_ts-node@9.1.1
+      '@nrwl/linter': 12.9.0
       chalk: 4.1.0
       chokidar: 3.5.2
       cosmiconfig: 4.0.0
@@ -11443,7 +11430,6 @@ packages:
       jest-validate: 27.2.2
       micromatch: 4.0.4
       pretty-format: 27.2.2
-    dev: true
     engines:
       node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0
     peerDependencies:
@@ -14868,6 +14854,16 @@ packages:
       react-dom: '>=16.8.0'
     resolution:
       integrity: sha512-BuzrlrM0ylg7coPkXOrRqlf2BgHLw5L44sybbr9Lg4xy7w9e5N7fGYbojOO0s8J0nvrM3PERN2rVFkvSa24lnQ==
+  /react-content-loader/6.0.3_react@17.0.2:
+    dependencies:
+      react: 17.0.2
+    dev: false
+    engines:
+      node: '>=10'
+    peerDependencies:
+      react: '>=16.0.0'
+    resolution:
+      integrity: sha512-CIRgTHze+ls+jGDIfCitw27YkW2XcaMpsYORTUdBxsMFiKuUYMnlvY76dZE4Lsaa9vFXVw+41ieBEK7SJt0nug==
   /react-dev-utils/11.0.4:
     dependencies:
       '@babel/code-frame': 7.10.4
@@ -18213,6 +18209,7 @@ specifiers:
   next: 11.1.0
   prettier: ^2.3.1
   react: 17.0.2
+  react-content-loader: ^6.0.3
   react-dom: 17.0.2
   react-query: ^3.24.4
   regenerator-runtime: 0.13.7
