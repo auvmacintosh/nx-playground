@@ -7,6 +7,7 @@
     "build": "nx build home",
     "dev": "nx serve home --port 3000",
     "sb:ui": "nx storybook ui --port 6000",
+    "export": "nx build home && nx export home",
     "test": "nx test home"
   },
   "private": true,
