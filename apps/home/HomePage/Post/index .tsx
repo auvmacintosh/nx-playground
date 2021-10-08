@@ -3,7 +3,7 @@ import Link from 'next/link';
 import style from './common.module.css';
 import { Env } from '@nx-playground/ui';
 import { getPost } from '../../apis/get-post';
-import { useQuery } from 'react-query';
+import { QueryClient, useQuery } from 'react-query';
 
 const PostLoader = () => (
   <ContentLoader

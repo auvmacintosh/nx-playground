@@ -7,8 +7,19 @@ import {
 } from 'react-query'
 
 // Create a client
-const queryClient = new QueryClient()
+// const queryClient = new QueryClient()
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      // refetchOnmount: false,
+      refetchOnReconnect: false,
+      retry: false,
+      staleTime: 5*50*1000,
+    },
+  },
+});
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>

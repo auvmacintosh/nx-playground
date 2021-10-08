@@ -1,4 +1,4 @@
-import { Post } from '../components/Post/index '
+import { Post } from '../HomePage/Post/index '
 
 function Index() {
   return <Post />
