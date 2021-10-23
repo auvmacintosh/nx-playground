@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import style from './common.module.css';
 import { Env } from '@nx-playground/ui';
-import { usePost } from './_hooks/use-post';
+import { usePost } from './_hooks/usePost';
 
 const PostLoader = () => <div>Loading...</div>;
 

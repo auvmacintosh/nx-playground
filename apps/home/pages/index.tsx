@@ -1,4 +1,4 @@
-import { Post } from '../home-page/post/index '
+import { Post } from '../HomePage/Post/index '
 
 function HomePage() {
   return <Post />

@@ -1,4 +1,4 @@
-import {LoginForm} from '../login-page/login-form'
+import {LoginForm} from '../LoginPage/LoginForm'
 
 function LoginPage() {
   return <LoginForm />

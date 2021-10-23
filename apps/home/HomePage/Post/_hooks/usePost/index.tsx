@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { getPost } from '../../_apis/get-post';
-import type { PostEntity } from '../../_apis/get-post/_types';
+import { getPost } from '../../_apis/getPost';
+import type { PostEntity } from '../../_apis/getPost/_types';
 
 export function usePost(id: string): PostEntity {
   const [post, setPost] = useState({
