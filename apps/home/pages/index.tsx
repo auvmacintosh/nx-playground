@@ -1,7 +1,7 @@
-import { Post } from '../HomePage/Post/index '
+import { Post } from '../home-page/post/index '
 
-function Index() {
+function HomePage() {
   return <Post />
 }
 
-export default Index
+export default HomePage
