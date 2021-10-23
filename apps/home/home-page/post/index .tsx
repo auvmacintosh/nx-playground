@@ -1,24 +1,22 @@
 import Link from 'next/link';
 import style from './common.module.css';
 import { Env } from '@nx-playground/ui';
-import { getPost } from '../../apis/get-post';
-import { QueryClient, useQuery } from 'react-query';
+import { usePost } from './_hooks/use-post';
 
-const PostLoader = () => <div>Loading...</div>
+const PostLoader = () => <div>Loading...</div>;
 
 export function Post() {
-  const path = 'posts';
   const id = '1';
 
-  const { isLoading, data } = useQuery([path, id], getPost);
+  const post = usePost(id)
 
   return (
     <div className={style.div}>
-      {data ? (
+      {post.title ? (
         <div>
           Post {id}:{' '}
-          <Link href="/post">
-            <a>{data?.title}</a>
+          <Link href='/post'>
+            <a>{post.title}</a>
           </Link>
         </div>
       ) : (
