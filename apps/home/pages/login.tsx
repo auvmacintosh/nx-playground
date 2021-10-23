@@ -1,7 +1,7 @@
-import {LoginForm} from '../LoginPage/LoginForm'
+import { LoginForm } from '../LoginPage/LoginForm';
 
 function LoginPage() {
-  return <LoginForm />
+  return <LoginForm />;
 }
 
-export default LoginPage
+export default LoginPage;

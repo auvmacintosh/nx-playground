@@ -6,7 +6,7 @@ export function Env(props: Props) {
     <div>
       <h1>Welcome to {process.env.NEXT_PUBLIC_ENVIRONMENT}! Some change.</h1>
     </div>
-  )
+  );
 }
 
-export default Env
+export default Env;

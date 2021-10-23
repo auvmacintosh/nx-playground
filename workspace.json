@@ -103,7 +103,8 @@
             "lintFilePatterns": ["apps/home/**/*.{ts,tsx,js,jsx}"]
           }
         }
-      }
+      },
+      "tags": []
     },
     "home-e2e": {
       "root": "apps/home-e2e",
@@ -130,7 +131,9 @@
             "lintFilePatterns": ["apps/home-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["home"]
     },
     "ui": {
       "root": "libs/ui",
@@ -183,7 +186,8 @@
             }
           }
         }
-      }
+      },
+      "tags": []
     }
   }
 }

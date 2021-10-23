@@ -1,7 +1,7 @@
-import { Post } from '../HomePage/Post/index '
+import { Post } from '../HomePage/Post/index ';
 
 function HomePage() {
-  return <Post />
+  return <Post />;
 }
 
-export default HomePage
+export default HomePage;

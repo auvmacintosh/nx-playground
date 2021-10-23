@@ -26,18 +26,6 @@
       }
     ]
   },
-  "projects": {
-    "home": {
-      "tags": []
-    },
-    "home-e2e": {
-      "tags": [],
-      "implicitDependencies": ["home"]
-    },
-    "ui": {
-      "tags": []
-    }
-  },
   "cli": {
     "defaultCollection": "@nrwl/next"
   },

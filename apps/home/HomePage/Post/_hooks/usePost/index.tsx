@@ -6,7 +6,7 @@ const initialPost = {
   userId: 0,
   id: 0,
   body: '',
-  title: ''
+  title: '',
 };
 
 export function usePost(id: string): PostEntity {
