@@ -1,20 +1,19 @@
-import { useEffect, useState } from 'react';
-import { getPost } from '../../_apis/getPost';
 import type { PostEntity } from '../../_apis/getPost/_types';
+import { getPost } from '../../_apis/getPost';
+import { useEffect, useState } from 'react';
+
+const initialPost = {
+  userId: 0,
+  id: 0,
+  body: '',
+  title: ''
+};
 
 export function usePost(id: string): PostEntity {
-  const [post, setPost] = useState({
-    'userId': 0,
-    'id': 0,
-    'body': '',
-    title: ''
-  });
+  const [post, setPost] = useState<PostEntity>(initialPost);
 
   useEffect(() => {
-    ;(async () => {
-      const json = await getPost(id);
-      setPost(json);
-    })();
+    getPost(id).then(setPost);
   }, [id]);
 
   return post;
