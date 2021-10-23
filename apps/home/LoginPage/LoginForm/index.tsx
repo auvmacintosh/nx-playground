@@ -1,5 +1,6 @@
 import type { CSSProperties, ReactNode } from 'react';
 import { ChangeEvent, useState } from 'react';
+import { Credential, login } from './_apis/login';
 import style from './common.module.css';
 
 export type Variant = 'default';
@@ -19,23 +20,11 @@ export function LoginForm({
   className = style.defaultClassName,
   style: inlineStyle,
 }: Props): JSX.Element {
-  const [credential, setCredential] = useState({ userName: '', password: '' });
+  const [credential, setCredential] = useState<Credential>({ userName: '', password: '' });
 
-  const login = async (event) => {
+  const submit = async (event) => {
     event.preventDefault();
-    const url = `https://www.abc.com`;
-    const headers = {
-      'Content-Type': 'application/json',
-    };
-    const body = JSON.stringify(credential);
-    try {
-      const response = await fetch(url, { method: 'POST', headers, body });
-      if (response.ok) {
-        return await response.json();
-      }
-    } catch (e) {
-      throw 'error';
-    }
+    await login(credential)
   };
 
   const handleChange = ({
@@ -45,7 +34,7 @@ export function LoginForm({
   };
 
   return (
-    <form className={style.form} onSubmit={login}>
+    <form className={style.form} onSubmit={submit}>
       <label>
         User Name:{' '}
         <input
