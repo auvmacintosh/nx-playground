@@ -1,0 +1,6 @@
+/* Small 0-599 */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

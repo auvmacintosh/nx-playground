@@ -1,7 +1,7 @@
-import { Post } from '../components/Post/index '
+import { Post } from '../HomePage/Post/index ';
 
-function Index() {
-  return <Post />
+function HomePage() {
+  return <Post />;
 }
 
-export default Index
+export default HomePage;

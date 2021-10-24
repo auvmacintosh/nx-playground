@@ -1,8 +1,8 @@
-import { Env } from '.'
-import type { Meta } from '@storybook/react'
+import { Env } from '.';
+import type { Meta } from '@storybook/react';
 
 // export const Default = (): JSX.Element => <Env />
-export const Default = (): JSX.Element => <div>abc</div>
+export const Default = (): JSX.Element => <div>abc</div>;
 
 const meta: Meta = {
   component: Env,
@@ -26,6 +26,6 @@ const meta: Meta = {
   //     )
   //   },
   // ],
-}
+};
 
-export default meta
+export default meta;
