@@ -3,6 +3,8 @@ dependencies:
   core-js: 3.18.0
   cors: 2.8.5
   express: 4.17.1
+  jsonwebtoken: 8.5.1
+  jwt-decode: 3.1.2
   next: 11.1.2_c8387e56bc3b6d5950464ec7c874e6c5
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -7366,6 +7368,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-DTM+PwDqxQqhRUq9MO+MKl2ackI=
+  /buffer-equal-constant-time/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-+OcRMvf/5uAaXJaXpMbz5I1cyBk=
   /buffer-from/1.1.2:
     resolution:
       integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
@@ -9036,6 +9042,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-OoOpBOVDUyh4dMVkt1SThoSamMk=
+  /ecdsa-sig-formatter/1.0.11:
+    dependencies:
+      safe-buffer: 5.2.1
+    dev: false
+    resolution:
+      integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==
   /ecstatic/3.3.2:
     dependencies:
       he: 1.2.0
@@ -12535,6 +12547,24 @@ packages:
       graceful-fs: 4.2.8
     resolution:
       integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
+  /jsonwebtoken/8.5.1:
+    dependencies:
+      jws: 3.2.2
+      lodash.includes: 4.3.0
+      lodash.isboolean: 3.0.3
+      lodash.isinteger: 4.0.4
+      lodash.isnumber: 3.0.3
+      lodash.isplainobject: 4.0.6
+      lodash.isstring: 4.0.1
+      lodash.once: 4.1.1
+      ms: 2.1.3
+      semver: 5.7.1
+    dev: false
+    engines:
+      node: '>=4'
+      npm: '>=1.4.28'
+    resolution:
+      integrity: sha512-XjwVfRS6jTMsqYs0EsuJ4LGxXV14zQybNd4L2r0UvbVnSF9Af8x7p5MzbJ90Ioz/9TI41/hTCvznF/loiSzn8w==
   /jsprim/1.4.1:
     dependencies:
       assert-plus: 1.0.0
@@ -12560,6 +12590,25 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-pBxcB3LFc8QVgdggvZWyeys+hnrNWg4OcZIU/1X59k5jQdLBlCsYGRQaz234SqoRLTCgMH00fY0xRJH+F9METQ==
+  /jwa/1.4.1:
+    dependencies:
+      buffer-equal-constant-time: 1.0.1
+      ecdsa-sig-formatter: 1.0.11
+      safe-buffer: 5.2.1
+    dev: false
+    resolution:
+      integrity: sha512-qiLX/xhEEFKUAJ6FiBMbes3w9ATzyk5W7Hvzpa/SLYdxNtng+gcurvrI7TbACjIXlsJyr05/S1oUhZrc63evQA==
+  /jws/3.2.2:
+    dependencies:
+      jwa: 1.4.1
+      safe-buffer: 5.2.1
+    dev: false
+    resolution:
+      integrity: sha512-YHlZCB6lMTllWDtSPHz/ZXTsi8S00usEV6v1tjq8tOUZzw7DpSDWVXjXDre6ed1w/pd495ODpHZYSdkRTsa0HA==
+  /jwt-decode/3.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==
   /kind-of/3.2.2:
     dependencies:
       is-buffer: 1.1.6
@@ -12800,6 +12849,30 @@ packages:
   /lodash.debounce/4.0.8:
     resolution:
       integrity: sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+  /lodash.includes/4.3.0:
+    dev: false
+    resolution:
+      integrity: sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8=
+  /lodash.isboolean/3.0.3:
+    dev: false
+    resolution:
+      integrity: sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY=
+  /lodash.isinteger/4.0.4:
+    dev: false
+    resolution:
+      integrity: sha1-YZwK89A/iwTDH1iChAt3sRzWg0M=
+  /lodash.isnumber/3.0.3:
+    dev: false
+    resolution:
+      integrity: sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w=
+  /lodash.isplainobject/4.0.6:
+    dev: false
+    resolution:
+      integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
+  /lodash.isstring/4.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=
   /lodash.memoize/4.1.2:
     resolution:
       integrity: sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
@@ -12807,7 +12880,6 @@ packages:
     resolution:
       integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
   /lodash.once/4.1.1:
-    dev: true
     resolution:
       integrity: sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
   /lodash.sortby/4.7.0:
@@ -18716,6 +18788,8 @@ specifiers:
   eslint-plugin-react-hooks: 4.2.0
   express: 4.17.1
   jest: 27.2.3
+  jsonwebtoken: ^8.5.1
+  jwt-decode: ^3.1.2
   next: 11.1.2
   prettier: ^2.3.1
   react: 17.0.2
